@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8"> 
+    <title>返回页面顶部 实例</title>
+  </head>
+  <body>
+    <div id="content">
+      <span class="box">返回顶部实例</span>
+    </div>
+    <div>
+      <img  id="btn_backup" src="img/return_top.png"/>
+    </div>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+
+  <style>
+    body{
+        margin: 0px;
+    }
+    #content{
+      background-color: cornflowerblue;
+      width: 100%;
+      height: 1200px;
+      position: relative;
+    }
+    /* 垂直居中 */
+    .box{
+      position: absolute;
+      width:100px;
+      height: 50px;
+      top:50%;
+      left:50%;
+      margin-left:-50px;
+      margin-top:-25px;
+      text-align: center;
+    }
+    #btn_backup{
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      padding: 3px;
+      width: 30px;
+      height: 30px;
+      display: none;
+}
+  </style>
+</html>
